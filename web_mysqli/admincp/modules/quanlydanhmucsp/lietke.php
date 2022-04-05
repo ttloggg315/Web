@@ -13,14 +13,17 @@
         $i = 0;
         while($row = mysqli_fetch_array($query_lietke_danhmucsp)){
             $i++;
-        }
+        
     ?>
     <tr>
         <td><?php echo $i ?></td>
-        <td><?php echo $row['tendanhmuc'] ?></td>
+        <td><?php echo $row['tendanhmuc']?></td>
         <td>
             <a href="modules/quanlydanhmucsp/xuly.php?iddanhmuc=<?php echo $row['id_danhmuc'] ?>">Xóa</a> | 
             <a href="?action=quanlydanhmucsanpham&query=sua&iddanhmuc=<?php echo $row['id_danhmuc'] ?>">Sửa</a>
         </td>
     </tr>
+    <?php
+        }
+    ?>
 </table>

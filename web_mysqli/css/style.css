@@ -838,7 +838,14 @@ ul.product_list li img{
 .clear{
     clear: both;
 }
-
+/* Đăng Ký */
+#maindangky form{
+    margin: 0 auto;
+}
+table.dangky tr td{
+    padding: 5px;
+    border: 1px solid black;
+}
 
 
 

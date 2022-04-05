@@ -5,9 +5,9 @@
 <p>Sửa Danh Mục Sản Phẩm</p>
 
     <table border="1" width="50% style="border-collapse: collapse;">
-        <form method="POST" action="modules/quanlydanhmucsp/xuly.php?iddanhmuc=<?php echo $_GET["iddanhmuc"] ?>">
+        <form method="POST" action="modules/quanlydanhmucsp/xuly.php?iddanhmuc=<?php echo $_GET['iddanhmuc'] ?>">
             <?php
-            while($dong = mysqli_fetch_array($query_sua_danhmucsp)){
+            while($dong = mysqli_fetch_array($query_sua_danhmucsp)) {
             ?>    
                 <tr>
                     <td>Tên danh mục</td>
@@ -20,9 +20,9 @@
                 <tr>
                     <td colspan="2"><input type="submit" name="suadanhmuc" value="Sửa danh mục sản phẩm"></td>
                 </tr>
-            <?php
-            }
-            ?>
+                <?php
+                }
+                ?>
         </form>
     </table>
 
